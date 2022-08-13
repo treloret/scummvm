@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ScummVM 1.8.0git\n"
 "Report-Msgid-Bugs-To: scummvm-devel@lists.scummvm.org\n"
-"POT-Creation-Date: 2022-08-10 01:55+0000\n"
-"PO-Revision-Date: 2022-08-07 17:37+0000\n"
+"POT-Creation-Date: 2022-08-12 04:33+0000\n"
+"PO-Revision-Date: 2022-08-11 09:30+0000\n"
 "Last-Translator: Purple T <ZEONK@hotmail.com>\n"
 "Language-Team: French <https://translations.scummvm.org/projects/scummvm/"
 "scummvm/fr/>\n"
@@ -3150,32 +3150,32 @@ msgstr "Étirer pour remplir la fenêtre"
 msgid "Fit to window (4:3)"
 msgstr "Adapter à la fenêtre (4:3)"
 
-#: backends/graphics/openglsdl/openglsdl-graphics.cpp:709
+#: backends/graphics/openglsdl/openglsdl-graphics.cpp:710
 #, c-format
 msgid "Resolution: %dx%d"
 msgstr "Résolution : %dx%d"
 
-#: backends/graphics/openglsdl/openglsdl-graphics.cpp:732
+#: backends/graphics/openglsdl/openglsdl-graphics.cpp:733
 #: backends/graphics/surfacesdl/surfacesdl-graphics.cpp:2450
 msgid "Enabled aspect ratio correction"
 msgstr "Correction du rapport d'aspect activée"
 
-#: backends/graphics/openglsdl/openglsdl-graphics.cpp:734
+#: backends/graphics/openglsdl/openglsdl-graphics.cpp:735
 #: backends/graphics/surfacesdl/surfacesdl-graphics.cpp:2456
 msgid "Disabled aspect ratio correction"
 msgstr "Correction du rapport d'aspect désactivée"
 
-#: backends/graphics/openglsdl/openglsdl-graphics.cpp:755
+#: backends/graphics/openglsdl/openglsdl-graphics.cpp:756
 #: backends/graphics/surfacesdl/surfacesdl-graphics.cpp:2472
 msgid "Filtering enabled"
 msgstr "Filtrage activé"
 
-#: backends/graphics/openglsdl/openglsdl-graphics.cpp:757
+#: backends/graphics/openglsdl/openglsdl-graphics.cpp:758
 #: backends/graphics/surfacesdl/surfacesdl-graphics.cpp:2474
 msgid "Filtering disabled"
 msgstr "Filtrage désactivé"
 
-#: backends/graphics/openglsdl/openglsdl-graphics.cpp:786
+#: backends/graphics/openglsdl/openglsdl-graphics.cpp:787
 #: backends/graphics/surfacesdl/surfacesdl-graphics.cpp:2501
 msgid "Stretch mode"
 msgstr "Mode d'étirement"
@@ -4286,7 +4286,7 @@ msgid "Quick load or save game isn't supported in this location"
 msgstr ""
 "Le chargement ou sauvegarde rapide du jeu n'est pas possible à cet endroit"
 
-#: engines/agos/saveload.cpp:161 engines/scumm/scumm.cpp:2665
+#: engines/agos/saveload.cpp:161 engines/scumm/scumm.cpp:2654
 #, c-format
 msgid ""
 "Failed to load saved game from file:\n"
@@ -4297,7 +4297,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: engines/agos/saveload.cpp:196 engines/scumm/scumm.cpp:2655
+#: engines/agos/saveload.cpp:196 engines/scumm/scumm.cpp:2644
 #, c-format
 msgid ""
 "Failed to save game to file:\n"
@@ -4308,7 +4308,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: engines/agos/saveload.cpp:204 engines/scumm/scumm.cpp:2678
+#: engines/agos/saveload.cpp:204 engines/scumm/scumm.cpp:2667
 #, c-format
 msgid ""
 "Successfully saved game in file:\n"
@@ -6143,28 +6143,31 @@ msgstr "Activer les transitions courtes"
 
 #: engines/mtropolis/detection.cpp:77
 msgid ""
-"Enables transitions that are set to maximum rate instead of skipping them"
+"Enables transitions that are set to maximum rate instead of skipping them."
 msgstr ""
 "Active les transitions qui sont réglées sur le rythme maximum au lieu de les "
-"ignorer"
+"ignorer."
 
 #: engines/mtropolis/detection.cpp:87
-msgid "Use subtitles for sound-based gameplay elements"
-msgstr ""
+msgid "Enable subtitles for important sound effects"
+msgstr "Activer les sous-titres pour les effets sonores importants"
 
 #: engines/mtropolis/detection.cpp:88
 msgid ""
-"Enables subtitles for gameplay elements that depend on hearing an audible "
-"sound."
+"Enables subtitles for important sound effects.  This may reduce the "
+"difficulty of sound recognition puzzles and minigames."
 msgstr ""
+"Active les sous-titres pour les effets sonores importants.  Cela peut "
+"réduire la difficulté des puzzles et mini-jeux basés sur la reconnaissance "
+"des sons."
 
 #: engines/mtropolis/detection.cpp:98
 msgid "Start with debugger"
 msgstr "Démarrer avec le débogueur"
 
 #: engines/mtropolis/detection.cpp:99
-msgid "Starts with the debugger dashboard active"
-msgstr "Démarre avec le panneau de débogage activé"
+msgid "Starts with the debugger dashboard active."
+msgstr "Démarre avec le panneau de débogage activé."
 
 #: engines/mtropolis/saveload.cpp:123
 msgid "Failed to read version information from save file"
@@ -6741,7 +6744,7 @@ msgstr ""
 "Veuillez utiliser une application externe pour ouvrir le fichier d'Aide du "
 "jeu : %s"
 
-#: engines/sci/engine/kmisc.cpp:846
+#: engines/sci/engine/kmisc.cpp:883
 msgid ""
 "The Poker logic is hardcoded in an external DLL, and is not implemented yet. "
 "There exists some dummy logic for now, where opponent actions are chosen "
@@ -6795,7 +6798,7 @@ msgstr ""
 "fonctionnalités peuvent ne pas marcher correctement. Consultez la console "
 "pour plus d'information et assurez-vous que vos fichiers de jeu sont valides."
 
-#: engines/sci/sci.cpp:387
+#: engines/sci/sci.cpp:388
 msgid ""
 "Subtitles are enabled, but subtitling in King's Quest 7 was unfinished and "
 "disabled in the release version of the game. ScummVM allows the subtitles to "
@@ -6809,7 +6812,7 @@ msgstr ""
 "correctement ou ne correspondent pas toujours à ce qui est dit. Ce n'est pas "
 "un bogue dans ScummVM, mais un problème avec les données du jeu."
 
-#: engines/sci/sci.cpp:411
+#: engines/sci/sci.cpp:412
 msgid ""
 "You have selected General MIDI as a sound device. Sierra has provided after-"
 "market support for General MIDI for this game in their \"General MIDI Utility"
@@ -6832,7 +6835,7 @@ msgstr ""
 "l'absence de ce patch, la musique General MIDI pour ce jeu est fortement "
 "déformée."
 
-#: engines/sci/sci.cpp:430
+#: engines/sci/sci.cpp:431
 msgid ""
 "Your game is patched with a fan made script patch. Such patches have been "
 "reported to cause issues, as they modify game scripts extensively. The "
@@ -6847,11 +6850,11 @@ msgstr ""
 "correctifs de votre répertoire contenant les données du jeu pour éviter tout "
 "problème."
 
-#: engines/sci/sci.cpp:509
+#: engines/sci/sci.cpp:510
 msgid "Download patch"
 msgstr "Télécharger le patch"
 
-#: engines/sci/sci.cpp:510
+#: engines/sci/sci.cpp:511
 msgid ""
 "(or click 'Download patch' button. But note - it only downloads, you will "
 "have to continue from there)\n"
@@ -6859,7 +6862,7 @@ msgstr ""
 "(ou cliquer sur le bouton 'Télécharger le patch'. Nota : Il ne sera que "
 "téléchargé, vous devrez continuer depuis ici)\n"
 
-#: engines/sci/sci.cpp:517
+#: engines/sci/sci.cpp:518
 msgid ""
 "GK2 has a fan made subtitles, available thanks to the good persons at "
 "SierraHelp.\n"
@@ -6875,7 +6878,7 @@ msgstr ""
 "- télécharger http://www.sierrahelp.com/Files/Patches/GabrielKnight/"
 "GK2Subtitles.zip\n"
 
-#: engines/sci/sci.cpp:848
+#: engines/sci/sci.cpp:849
 msgid ""
 "Characters saved inside ScummVM are shown automatically. Character files "
 "saved in the original interpreter need to be put inside ScummVM's saved "
@@ -7812,7 +7815,7 @@ msgstr ""
 "Le support MIDI natif requiert la mise à jour Roland de LucasArts,\n"
 "mais %s est manquant. AdLib sera utilisé."
 
-#: engines/scumm/scumm.cpp:3182
+#: engines/scumm/scumm.cpp:3189
 msgid ""
 "Usually, Maniac Mansion would start now. But for that to work, the game "
 "files for Maniac Mansion have to be in the 'Maniac' directory inside the "

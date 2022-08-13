@@ -756,7 +756,7 @@ void ScummEngine_v5::o5_breakHere() {
 	// least intrusive way of adding the delay. The script calls it a number
 	// of times, but only once from room 69.
 
-  if (_game.id == GID_LOOM && _game.platform == Common::kPlatformPCEngine && _language == Common::EN_ANY && vm.slot[_currentScript].number == 44 && _currentRoom == 69) {
+	if (_game.id == GID_LOOM && _game.platform == Common::kPlatformPCEngine && _language == Common::EN_ANY && vm.slot[_currentScript].number == 44 && _currentRoom == 69) {
 		vm.slot[_currentScript].delay = 120;
 		vm.slot[_currentScript].status = ssPaused;
 	}
@@ -1023,7 +1023,8 @@ void ScummEngine_v5::o5_drawObject() {
 	// face Guybrush even if he's already looking at him.  drawObject() should never
 	// be called if Bit[129] is set in that script, so if it does happen, it means
 	// the check was missing, and so we ignore the next 32 bytes of Dread's reaction.
-	if (_game.id == GID_MONKEY2 && _currentRoom == 22 && vm.slot[_currentScript].number == 201 && obj == 237 && state == 1 && readVar(0x8000 + 129) == 1 && _enableEnhancements) {
+	if (_game.id == GID_MONKEY2 && _currentRoom == 22 && vm.slot[_currentScript].number == 201 && obj == 237 &&
+		state == 1 && readVar(0x8000 + 129) == 1 && _enableEnhancements && strcmp(_game.variant, "SE Talkie") != 0) {
 		_scriptPointer += 32;
 		return;
 	}
@@ -1230,9 +1231,20 @@ void ScummEngine_v5::o5_getActorMoving() {
 void ScummEngine_v5::o5_getActorRoom() {
 	getResultPos();
 	int act = getVarOrDirectByte(PARAM_1);
-	// WORKAROUND bug #832. This is a really odd bug in either the script
-	// or in our script engine. Might be a good idea to investigate this
-	// further by e.g. looking at the FOA engine a bit closer.
+
+	// WORKAROUND bug #832: Invalid actor XXX in o5_getActorRoom().
+	//
+	// Script 94-206 is started by script 94-200 this way:
+	//
+	// Var[442] = getObjectOwner(586)  (the metal rod)
+	// startScript(201,[Var[442]],F)
+	// startScript(206,[Var[442]],F,R)
+	//
+	// Script 201 gets to run first, and it changes the value of Var[442],
+	// so by the time script 206 is invoked, it gets a bad value as param.
+	// This is a really odd bug in either the script or in our script
+	// engine. Might be a good idea to investigate this further by e.g.
+	// looking at the FOA engine a bit closer. The original doesn't crash.
 	if (_game.id == GID_INDY4 && _roomResource == 94 && vm.slot[_currentScript].number == 206 && !isValidActor(act)) {
 		setResult(0);
 		return;
@@ -2874,33 +2886,6 @@ void ScummEngine_v5::o5_verbOps() {
 				default:
 					break;
 				}
-			} else	if (_game.id == GID_LOOM && _game.version == 4) {
-			// FIXME: hack loom notes into right spot
-				if ((verb >= 90) && (verb <= 97)) {	// Notes
-					switch (verb) {
-					case 90:
-					case 91:
-						vs->curRect.top -= 7;
-						break;
-					case 92:
-						vs->curRect.top -= 6;
-						break;
-					case 93:
-						vs->curRect.top -= 4;
-						break;
-					case 94:
-						vs->curRect.top -= 3;
-						break;
-					case 95:
-						vs->curRect.top -= 1;
-						break;
-					case 97:
-						vs->curRect.top -= 5;
-						break;
-					default:
-						break;
-					}
-				}
 			} else if (_game.platform == Common::kPlatformFMTowns && ConfMan.getBool("trim_fmtowns_to_200_pixels")) {
 				if (_game.id == GID_ZAK && verb == 116)
 					// WORKAROUND: FM-TOWNS Zak used the extra 40 pixels at the bottom to increase the inventory to 10 items
@@ -3254,7 +3239,9 @@ void ScummEngine_v5::decodeParseString() {
 		case 15:{	// SO_TEXTSTRING
 				const int len = resStrLen(_scriptPointer);
 
-				if (_game.id == GID_LOOM && vm.slot[_currentScript].number == 95 && _enableEnhancements && strcmp((const char *)_scriptPointer, "I am Choas.") == 0) {
+				if (_game.id == GID_LOOM && _game.version == 4 && _language == Common::EN_ANY &&
+						vm.slot[_currentScript].number == 95 && _enableEnhancements &&
+						strcmp((const char *)_scriptPointer, "I am Choas.") == 0) {
 					// WORKAROUND: This happens when Chaos introduces
 					// herself to bishop Mandible. Of all the places to put
 					// a typo...

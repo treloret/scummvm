@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ScummVM 1.6.0git\n"
 "Report-Msgid-Bugs-To: scummvm-devel@lists.scummvm.org\n"
-"POT-Creation-Date: 2022-08-10 01:55+0000\n"
-"PO-Revision-Date: 2022-04-24 20:27+0000\n"
+"POT-Creation-Date: 2022-08-12 04:33+0000\n"
+"PO-Revision-Date: 2022-08-12 15:37+0000\n"
 "Last-Translator: Xaviu <xaviu@xaviu.com>\n"
 "Language-Team: Catalan <https://translations.scummvm.org/projects/scummvm/"
 "scummvm/ca/>\n"
@@ -219,9 +219,8 @@ msgid "Downloading icons list..."
 msgstr "S'està baixant la llista d'icones..."
 
 #: gui/downloadiconsdialog.cpp:190
-#, fuzzy
 msgid "Clear Cache"
-msgstr "Neteja el valor"
+msgstr "Neteja la memòria cau"
 
 #: gui/downloadiconsdialog.cpp:241
 #, c-format
@@ -819,7 +818,6 @@ msgid "Change global ScummVM options"
 msgstr "Canvia les opcions globals de ScummVM"
 
 #: gui/launcher.cpp:246
-#, fuzzy
 msgctxt "lowres"
 msgid "Global ~O~pts..."
 msgstr "~O~pcs. globals..."
@@ -969,10 +967,9 @@ msgid "Change game options"
 msgstr "Canvia les opcions del joc"
 
 #: gui/launcher.cpp:1017
-#, fuzzy
 msgctxt "lowres"
 msgid "~G~ame Opts..."
-msgstr "~O~pcs. del joc..."
+msgstr "Opcs. del ~j~oc..."
 
 #. I18N: List grouping when no engine is specified
 #. I18N: List grouping when no enginr is specified
@@ -1534,7 +1531,6 @@ msgid "Icon Path:"
 msgstr "Directori d'icones:"
 
 #: gui/options.cpp:2307
-#, fuzzy
 msgctxt "path"
 msgid "Default"
 msgstr "Per defecte"
@@ -3124,32 +3120,32 @@ msgstr "Amplia a la finestra"
 msgid "Fit to window (4:3)"
 msgstr "Ajusta a la finestra (4:3)"
 
-#: backends/graphics/openglsdl/openglsdl-graphics.cpp:709
+#: backends/graphics/openglsdl/openglsdl-graphics.cpp:710
 #, c-format
 msgid "Resolution: %dx%d"
 msgstr "Resolució: %dx%d"
 
-#: backends/graphics/openglsdl/openglsdl-graphics.cpp:732
+#: backends/graphics/openglsdl/openglsdl-graphics.cpp:733
 #: backends/graphics/surfacesdl/surfacesdl-graphics.cpp:2450
 msgid "Enabled aspect ratio correction"
 msgstr "S'ha activat la correcció de la relació d'aspecte"
 
-#: backends/graphics/openglsdl/openglsdl-graphics.cpp:734
+#: backends/graphics/openglsdl/openglsdl-graphics.cpp:735
 #: backends/graphics/surfacesdl/surfacesdl-graphics.cpp:2456
 msgid "Disabled aspect ratio correction"
 msgstr "S'ha desactivat la correcció de la relació d'aspecte"
 
-#: backends/graphics/openglsdl/openglsdl-graphics.cpp:755
+#: backends/graphics/openglsdl/openglsdl-graphics.cpp:756
 #: backends/graphics/surfacesdl/surfacesdl-graphics.cpp:2472
 msgid "Filtering enabled"
 msgstr "Filtratge activat"
 
-#: backends/graphics/openglsdl/openglsdl-graphics.cpp:757
+#: backends/graphics/openglsdl/openglsdl-graphics.cpp:758
 #: backends/graphics/surfacesdl/surfacesdl-graphics.cpp:2474
 msgid "Filtering disabled"
 msgstr "Filtratge desactivat"
 
-#: backends/graphics/openglsdl/openglsdl-graphics.cpp:786
+#: backends/graphics/openglsdl/openglsdl-graphics.cpp:787
 #: backends/graphics/surfacesdl/surfacesdl-graphics.cpp:2501
 msgid "Stretch mode"
 msgstr "Mode d'ajustament"
@@ -3739,40 +3735,34 @@ msgid "Choose the preferred touch mode:"
 msgstr ""
 
 #: backends/platform/android/options.cpp:96
-#, fuzzy
 msgid "In menus"
-msgstr "Activa el mode heli"
+msgstr "Als menús"
 
 #: backends/platform/android/options.cpp:98
 #: backends/platform/android/options.cpp:116
 #: backends/platform/android/options.cpp:117
-#, fuzzy
 msgid "Touchpad emulation"
-msgstr "Emulació de TV"
+msgstr "Emulació del ratolí tàctil"
 
 #: backends/platform/android/options.cpp:99
 #: backends/platform/android/options.cpp:119
 #: backends/platform/android/options.cpp:120
-#, fuzzy
 msgid "Direct mouse"
-msgstr "Ratolí virtual amunt"
+msgstr "Ratolí directe"
 
 #: backends/platform/android/options.cpp:100
 #: backends/platform/android/options.cpp:122
 #: backends/platform/android/options.cpp:123
-#, fuzzy
 msgid "Gamepad emulation"
-msgstr "Emulació de TV"
+msgstr "Emulació del comandament de joc"
 
 #: backends/platform/android/options.cpp:106
-#, fuzzy
 msgid "In 2D games"
-msgstr "Sincronització als jocs 3D"
+msgstr "En jocs 2D"
 
 #: backends/platform/android/options.cpp:108
-#, fuzzy
 msgid "In 3D games"
-msgstr "Sincronització als jocs 3D"
+msgstr "En jocs 3D"
 
 #. I18N: Show a button to revoke Storage Access Framework permissions for Android
 #: backends/platform/android/options.cpp:128
@@ -4246,7 +4236,7 @@ msgstr "Restaura"
 msgid "Quick load or save game isn't supported in this location"
 msgstr ""
 
-#: engines/agos/saveload.cpp:161 engines/scumm/scumm.cpp:2665
+#: engines/agos/saveload.cpp:161 engines/scumm/scumm.cpp:2654
 #, c-format
 msgid ""
 "Failed to load saved game from file:\n"
@@ -4257,7 +4247,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: engines/agos/saveload.cpp:196 engines/scumm/scumm.cpp:2655
+#: engines/agos/saveload.cpp:196 engines/scumm/scumm.cpp:2644
 #, c-format
 msgid ""
 "Failed to save game to file:\n"
@@ -4268,7 +4258,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: engines/agos/saveload.cpp:204 engines/scumm/scumm.cpp:2678
+#: engines/agos/saveload.cpp:204 engines/scumm/scumm.cpp:2667
 #, c-format
 msgid ""
 "Successfully saved game in file:\n"
@@ -4333,9 +4323,8 @@ msgid "Prefer digital sound effects instead of synthesized ones"
 msgstr "Prefereix els efectes de so digitals en lloc dels sintetitzats"
 
 #: engines/agos/detection.cpp:126
-#, fuzzy
 msgid "Disable fade-out effects"
-msgstr "Inhabilita el desament automàtic"
+msgstr "Desactiva els efectes d'esvaïment"
 
 #: engines/agos/detection.cpp:127
 msgid "Don't fade every screen to black when leaving a room."
@@ -4398,9 +4387,8 @@ msgid "Bring up the In-Game Menu"
 msgstr ""
 
 #: engines/asylum/metaengine.cpp:151
-#, fuzzy
 msgid "Open character inventory"
-msgstr "Obre/Tanca l'inventari"
+msgstr "Obre l'inventari del personatge"
 
 #. I18N: Warn user about loading potentially incompatible saved game
 #: engines/asylum/asylum.cpp:200
@@ -4487,9 +4475,8 @@ msgid ""
 msgstr ""
 
 #: engines/bladerunner/detection.cpp:108
-#, fuzzy
 msgid "Show subtitles during text crawl"
-msgstr "Mostra els subtítols i reprodueix la veu"
+msgstr "Mostra els subtítols durant el text d'introducció"
 
 #: engines/bladerunner/detection.cpp:109
 msgid "During the intro cutscene, show subtitles during the text crawl"
@@ -4607,9 +4594,8 @@ msgstr "Desplaça avall"
 #. I18N: This keymap allows (in KIA only) for a clue to be set as private or public
 #. (only when the KIA is upgraded).
 #: engines/bladerunner/metaengine.cpp:221
-#, fuzzy
 msgid "Toggle Clue Privacy"
-msgstr "Commuta el silenci"
+msgstr "Commuta la privadesa de la pista"
 
 #. I18N: This keymap opens KIA's SAVE GAME tab.
 #. In Blade Runner's official localizations, there is a description of this keymap
@@ -5204,27 +5190,24 @@ msgid "Enable Gore Mode when available"
 msgstr ""
 
 #: engines/hypno/detection.cpp:248
-#, fuzzy
 msgid "Enable original cheats"
-msgstr "Habilita els trucs (cheats)"
+msgstr "Habilita els trucs originals"
 
 #: engines/hypno/detection.cpp:249
 msgid "Allow cheats using the C key."
 msgstr ""
 
 #: engines/hypno/detection.cpp:259
-#, fuzzy
 msgid "Enable infinite health cheat"
-msgstr "Activa els cursors flotants"
+msgstr "Activa el truc de salut infinita"
 
 #: engines/hypno/detection.cpp:260
 msgid "Player health will never decrease (except for game over scenes)."
 msgstr ""
 
 #: engines/hypno/detection.cpp:270
-#, fuzzy
 msgid "Enable infinite ammo cheat"
-msgstr "Habilita els trucs (cheats)"
+msgstr "Activa el truc de munició infinita"
 
 #: engines/hypno/detection.cpp:271
 msgid "Player ammo will never decrease."
@@ -5903,17 +5886,17 @@ msgstr "Habilita la integració amb Discord"
 
 #: engines/mtropolis/detection.cpp:77
 msgid ""
-"Enables transitions that are set to maximum rate instead of skipping them"
+"Enables transitions that are set to maximum rate instead of skipping them."
 msgstr ""
 
 #: engines/mtropolis/detection.cpp:87
-msgid "Use subtitles for sound-based gameplay elements"
+msgid "Enable subtitles for important sound effects"
 msgstr ""
 
 #: engines/mtropolis/detection.cpp:88
 msgid ""
-"Enables subtitles for gameplay elements that depend on hearing an audible "
-"sound."
+"Enables subtitles for important sound effects.  This may reduce the "
+"difficulty of sound recognition puzzles and minigames."
 msgstr ""
 
 #: engines/mtropolis/detection.cpp:98
@@ -5922,14 +5905,12 @@ msgid "Start with debugger"
 msgstr "Inicia el depurador"
 
 #: engines/mtropolis/detection.cpp:99
-#, fuzzy
-msgid "Starts with the debugger dashboard active"
-msgstr "Inicia el depurador"
+msgid "Starts with the debugger dashboard active."
+msgstr "Inicia amb el tauler de control del depurador actiu."
 
 #: engines/mtropolis/saveload.cpp:123
-#, fuzzy
 msgid "Failed to read version information from save file"
-msgstr "No s'ha pogut carregar la partida desada al fitxer."
+msgstr "No s'ha pogut llegir la informació de la versió de la partida desada"
 
 #: engines/mtropolis/saveload.cpp:131
 msgid ""
@@ -6469,7 +6450,7 @@ msgid "Please use an external viewer to open the game's help file: %s"
 msgstr ""
 "Si us plau, feu servir un visor extern per obrir l'arxiu d'ajuda del joc: %s"
 
-#: engines/sci/engine/kmisc.cpp:846
+#: engines/sci/engine/kmisc.cpp:883
 msgid ""
 "The Poker logic is hardcoded in an external DLL, and is not implemented yet. "
 "There exists some dummy logic for now, where opponent actions are chosen "
@@ -6510,7 +6491,7 @@ msgid ""
 "that your game files are valid."
 msgstr ""
 
-#: engines/sci/sci.cpp:387
+#: engines/sci/sci.cpp:388
 msgid ""
 "Subtitles are enabled, but subtitling in King's Quest 7 was unfinished and "
 "disabled in the release version of the game. ScummVM allows the subtitles to "
@@ -6519,7 +6500,7 @@ msgid ""
 "ScummVM bug -- it is a problem with the game's assets."
 msgstr ""
 
-#: engines/sci/sci.cpp:411
+#: engines/sci/sci.cpp:412
 msgid ""
 "You have selected General MIDI as a sound device. Sierra has provided after-"
 "market support for General MIDI for this game in their \"General MIDI Utility"
@@ -6532,7 +6513,7 @@ msgid ""
 "game will sound badly distorted."
 msgstr ""
 
-#: engines/sci/sci.cpp:430
+#: engines/sci/sci.cpp:431
 msgid ""
 "Your game is patched with a fan made script patch. Such patches have been "
 "reported to cause issues, as they modify game scripts extensively. The "
@@ -6541,17 +6522,17 @@ msgid ""
 "errors and/or issues later on."
 msgstr ""
 
-#: engines/sci/sci.cpp:509
+#: engines/sci/sci.cpp:510
 msgid "Download patch"
 msgstr "Baixa el pedaç"
 
-#: engines/sci/sci.cpp:510
+#: engines/sci/sci.cpp:511
 msgid ""
 "(or click 'Download patch' button. But note - it only downloads, you will "
 "have to continue from there)\n"
 msgstr ""
 
-#: engines/sci/sci.cpp:517
+#: engines/sci/sci.cpp:518
 msgid ""
 "GK2 has a fan made subtitles, available thanks to the good persons at "
 "SierraHelp.\n"
@@ -6561,7 +6542,7 @@ msgid ""
 "GK2Subtitles.zip\n"
 msgstr ""
 
-#: engines/sci/sci.cpp:848
+#: engines/sci/sci.cpp:849
 msgid ""
 "Characters saved inside ScummVM are shown automatically. Character files "
 "saved in the original interpreter need to be put inside ScummVM's saved "
@@ -6812,9 +6793,8 @@ msgid ""
 msgstr ""
 
 #: engines/scumm/dialogs.cpp:840
-#, fuzzy
 msgid "Playback Adjust:"
-msgstr "Reproducció"
+msgstr "Ajust de reproducció:"
 
 #: engines/scumm/dialogs.cpp:844
 msgid ""
@@ -7426,7 +7406,7 @@ msgstr ""
 "El suport de MIDI natiu requereix l'actualització Roland de LucasArts,\n"
 "però no s'ha trobat %s. S'utilitzarà AdLib."
 
-#: engines/scumm/scumm.cpp:3182
+#: engines/scumm/scumm.cpp:3189
 msgid ""
 "Usually, Maniac Mansion would start now. But for that to work, the game "
 "files for Maniac Mansion have to be in the 'Maniac' directory inside the "

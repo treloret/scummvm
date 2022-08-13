@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ScummVM 1.5.0git\n"
 "Report-Msgid-Bugs-To: scummvm-devel@lists.scummvm.org\n"
-"POT-Creation-Date: 2022-08-10 01:55+0000\n"
+"POT-Creation-Date: 2022-08-12 04:33+0000\n"
 "PO-Revision-Date: 2021-01-02 18:37+0000\n"
 "Last-Translator: Eugene Sandulenko <sev@scummvm.org>\n"
 "Language-Team: Basque <https://translations.scummvm.org/projects/scummvm/"
@@ -3146,34 +3146,34 @@ msgstr "Tiratu leihora"
 msgid "Fit to window (4:3)"
 msgstr "Doitu leihora (4:3)"
 
-#: backends/graphics/openglsdl/openglsdl-graphics.cpp:709
+#: backends/graphics/openglsdl/openglsdl-graphics.cpp:710
 #, c-format
 msgid "Resolution: %dx%d"
 msgstr "Bereizmena: %dx%d"
 
-#: backends/graphics/openglsdl/openglsdl-graphics.cpp:732
+#: backends/graphics/openglsdl/openglsdl-graphics.cpp:733
 #: backends/graphics/surfacesdl/surfacesdl-graphics.cpp:2450
 msgid "Enabled aspect ratio correction"
 msgstr "Formatu-ratio zuzenketa gaituta"
 
-#: backends/graphics/openglsdl/openglsdl-graphics.cpp:734
+#: backends/graphics/openglsdl/openglsdl-graphics.cpp:735
 #: backends/graphics/surfacesdl/surfacesdl-graphics.cpp:2456
 msgid "Disabled aspect ratio correction"
 msgstr "Formatu-ratio zuzenketa desgaituta"
 
-#: backends/graphics/openglsdl/openglsdl-graphics.cpp:755
+#: backends/graphics/openglsdl/openglsdl-graphics.cpp:756
 #: backends/graphics/surfacesdl/surfacesdl-graphics.cpp:2472
 #, fuzzy
 msgid "Filtering enabled"
 msgstr "Klikatzea gaituta"
 
-#: backends/graphics/openglsdl/openglsdl-graphics.cpp:757
+#: backends/graphics/openglsdl/openglsdl-graphics.cpp:758
 #: backends/graphics/surfacesdl/surfacesdl-graphics.cpp:2474
 #, fuzzy
 msgid "Filtering disabled"
 msgstr "Klikatzea desgaituta"
 
-#: backends/graphics/openglsdl/openglsdl-graphics.cpp:786
+#: backends/graphics/openglsdl/openglsdl-graphics.cpp:787
 #: backends/graphics/surfacesdl/surfacesdl-graphics.cpp:2501
 #, fuzzy
 msgid "Stretch mode"
@@ -4334,7 +4334,7 @@ msgstr "Kargatu"
 msgid "Quick load or save game isn't supported in this location"
 msgstr ""
 
-#: engines/agos/saveload.cpp:161 engines/scumm/scumm.cpp:2665
+#: engines/agos/saveload.cpp:161 engines/scumm/scumm.cpp:2654
 #, fuzzy, c-format
 msgid ""
 "Failed to load saved game from file:\n"
@@ -4345,7 +4345,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: engines/agos/saveload.cpp:196 engines/scumm/scumm.cpp:2655
+#: engines/agos/saveload.cpp:196 engines/scumm/scumm.cpp:2644
 #, fuzzy, c-format
 msgid ""
 "Failed to save game to file:\n"
@@ -4356,7 +4356,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: engines/agos/saveload.cpp:204 engines/scumm/scumm.cpp:2678
+#: engines/agos/saveload.cpp:204 engines/scumm/scumm.cpp:2667
 #, fuzzy, c-format
 msgid ""
 "Successfully saved game in file:\n"
@@ -6113,17 +6113,17 @@ msgstr "Gaitu kurtsore flotatzaileak"
 
 #: engines/mtropolis/detection.cpp:77
 msgid ""
-"Enables transitions that are set to maximum rate instead of skipping them"
+"Enables transitions that are set to maximum rate instead of skipping them."
 msgstr ""
 
 #: engines/mtropolis/detection.cpp:87
-msgid "Use subtitles for sound-based gameplay elements"
+msgid "Enable subtitles for important sound effects"
 msgstr ""
 
 #: engines/mtropolis/detection.cpp:88
 msgid ""
-"Enables subtitles for gameplay elements that depend on hearing an audible "
-"sound."
+"Enables subtitles for important sound effects.  This may reduce the "
+"difficulty of sound recognition puzzles and minigames."
 msgstr ""
 
 #: engines/mtropolis/detection.cpp:98
@@ -6133,7 +6133,7 @@ msgstr "Araztailea abiarazi"
 
 #: engines/mtropolis/detection.cpp:99
 #, fuzzy
-msgid "Starts with the debugger dashboard active"
+msgid "Starts with the debugger dashboard active."
 msgstr "Araztailea abiarazi"
 
 #: engines/mtropolis/saveload.cpp:123
@@ -6712,7 +6712,7 @@ msgstr "Autogordetzea:"
 msgid "Please use an external viewer to open the game's help file: %s"
 msgstr ""
 
-#: engines/sci/engine/kmisc.cpp:846
+#: engines/sci/engine/kmisc.cpp:883
 msgid ""
 "The Poker logic is hardcoded in an external DLL, and is not implemented yet. "
 "There exists some dummy logic for now, where opponent actions are chosen "
@@ -6752,7 +6752,7 @@ msgid ""
 "that your game files are valid."
 msgstr ""
 
-#: engines/sci/sci.cpp:387
+#: engines/sci/sci.cpp:388
 msgid ""
 "Subtitles are enabled, but subtitling in King's Quest 7 was unfinished and "
 "disabled in the release version of the game. ScummVM allows the subtitles to "
@@ -6761,7 +6761,7 @@ msgid ""
 "ScummVM bug -- it is a problem with the game's assets."
 msgstr ""
 
-#: engines/sci/sci.cpp:411
+#: engines/sci/sci.cpp:412
 msgid ""
 "You have selected General MIDI as a sound device. Sierra has provided after-"
 "market support for General MIDI for this game in their \"General MIDI Utility"
@@ -6774,7 +6774,7 @@ msgid ""
 "game will sound badly distorted."
 msgstr ""
 
-#: engines/sci/sci.cpp:430
+#: engines/sci/sci.cpp:431
 msgid ""
 "Your game is patched with a fan made script patch. Such patches have been "
 "reported to cause issues, as they modify game scripts extensively. The "
@@ -6783,18 +6783,18 @@ msgid ""
 "errors and/or issues later on."
 msgstr ""
 
-#: engines/sci/sci.cpp:509
+#: engines/sci/sci.cpp:510
 #, fuzzy
 msgid "Download patch"
 msgstr "Behera"
 
-#: engines/sci/sci.cpp:510
+#: engines/sci/sci.cpp:511
 msgid ""
 "(or click 'Download patch' button. But note - it only downloads, you will "
 "have to continue from there)\n"
 msgstr ""
 
-#: engines/sci/sci.cpp:517
+#: engines/sci/sci.cpp:518
 msgid ""
 "GK2 has a fan made subtitles, available thanks to the good persons at "
 "SierraHelp.\n"
@@ -6804,7 +6804,7 @@ msgid ""
 "GK2Subtitles.zip\n"
 msgstr ""
 
-#: engines/sci/sci.cpp:848
+#: engines/sci/sci.cpp:849
 msgid ""
 "Characters saved inside ScummVM are shown automatically. Character files "
 "saved in the original interpreter need to be put inside ScummVM's saved "
@@ -7685,7 +7685,7 @@ msgstr ""
 "MIDI euskarri natiboak LucasArts-en Roland eguneraketa behar du,\n"
 "baina %s ez dago eskuragarri. AdLib erabiliko da."
 
-#: engines/scumm/scumm.cpp:3182
+#: engines/scumm/scumm.cpp:3189
 msgid ""
 "Usually, Maniac Mansion would start now. But for that to work, the game "
 "files for Maniac Mansion have to be in the 'Maniac' directory inside the "
