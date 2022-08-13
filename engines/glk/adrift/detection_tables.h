@@ -59,11 +59,31 @@ const PlainGameDescriptor ADRIFT_GAME_LIST[] = {
 	{ "ad4-doclobster", "Attack of Doc Lobster's Mutant Menagerie of Horror" },
 	{ "ad4-mutaydid", "Attack of the Mutaydid Meat Monsters" },
 	{ "awalkatdusk", "A Walk At Dusk" },
+	{ "ad4-backhome", "Back Home" },
 	{ "ad4-unfortunately", "Back To Life... Unfortunately" },
 	{ "bariscebik", "Bariscebik" },
 	{ "ad4-barneysproblem", "Barney's Problem" },
+	{ "ad4-baroo", "Ba'Roo!" },
 	{ "ad4-beanstalk", "Beanstalk the and Jack" },
+	{ "ad3-bedlam", "Bedlam" },
+	{ "ad4-beethro", "Beethro's Text Adventure (Demo)" },
+	{ "ad4-bigcitylaundry", "Big City Laundry" },
+	{ "ad3-bigdayout", "Big Day Out" },
+	{ "ad3-bigstuff", "Big Stuff" },
+	{ "ad4-blacksheepsgold", "Black Sheep's Gold" },
+	{ "ad4-blast", "Blast" },
+	{ "ad4-bloodrelatives", "Blood Relatives" },
+	{ "ad4-boiledeggs", "Boiled Eggs" },
+	{ "ad3-bombthreat", "Bomb Threat" },
+	{ "ad4-bountyhunter", "Bounty Hunter" },
+	{ "ad4-braindeadweekend", "Brain Dead Weekend" },
+	{ "ad4-breakout", "Breakout" },
+	{ "ad4-bringingrain", "Bringing the Rain" },
+	{ "ad4-britishfox", "British Fox and the Celebrity Abductions" },
 	{ "beerisntenough", "When Beer Isn't Enough" },
+	{ "ad4-bsg22", "BSG: Twenty Two" },
+	{ "ad3-buffybeforedate", "Buffy: Before the Date" },
+	{ "ad4-businessasusual", "Business As Usual" },
 	{ "caveofwonders", "Cave of Wonders" },
 	{ "circusmenagerie", "Menagerie!" },
 	{ "cityInfear", "City In Fear" },
@@ -164,6 +184,8 @@ const PlainGameDescriptor ADRIFT_GAME_LIST[] = {
 	{ "ad4-hellinahamper", "To Hell in a Hamper" },
 	{ "toomuchexercise", "Too Much Exercise" },
 	{ "topaz", "Topaz" },
+	{ "ad4-thebirthday", "the Birthday" },
+	{ "ad3-fistandantalus", "The book of Fistandantalus" },
 	{ "twilight", "The Twilight" },
 	{ "unauthorizedtermination", "Unauthorised Termination" },
 	{ "unravelinggod", "Unraveling God" },
@@ -192,15 +214,19 @@ const PlainGameDescriptor ADRIFT_GAME_LIST[] = {
 	{ "noblecrook4", "Noble Crook, episode 4" },
 	{ "sonofcamelot", "Son of Camelot" },
 
+	// French Games
+	{ "ad4-bellesmeres", "Belles-mères" },
+
 	// Italian Games
 	{ "ilgolem", "Il Golem" },
 
 	// Spanish Games
 	{ "ad4-elascensor", "El Ascensor" },
+	{ "ad4-bandera", "Bandera" },
 
 	// Three Hour Games Competition: July 2004
 	{ "3hgjailbreakbob", "Jailbreak Bob" },
-	{ "3hgbriefcase", "Briefcase" },
+	{ "ad4-3hgbriefcase", "Briefcase" },
 	{ "ad3-3hgtheannihilationofthink", "Annihilation of Think.com" },
 	{ "3hgshadricktravels", "Shadrick's Travels" },
 	{ "3hglostsouls", "Lost Souls" },
@@ -211,7 +237,7 @@ const PlainGameDescriptor ADRIFT_GAME_LIST[] = {
 	{ "3hgsandl", "Snakes and Ladders" },
 	{ "3hgconfession", "The Murder of Jack Morely" },
 	{ "3hgveteran", "Veteran Experience" },
-	{ "3hgburiedalive", "Buried Alive" },
+	{ "ad4-3hgburiedalive", "Buried Alive" },
 	{ "3hgzac", "Zombies are Cool" },
 	{ "3hgtogetyou", "We are coming to get you!" },
 
@@ -367,11 +393,31 @@ const GlkDetectionEntry ADRIFT_GAMES[] = {
 	DT_ENTRY0("ad4-doclobster", "e4fdf252cfa05e672ffaeb806e9d6c0c", 7186),
 	DT_ENTRY0("ad4-mutaydid", "23c47fd2ff2a06e05e7ae7ba028ce090", 513587),
 	DT_ENTRY0("awalkatdusk", "f2e8aca65a17d41804709ee5a420ef36", 20725),
+	DT_ENTRY1("ad4-backhome", "1.0", "bc13667aac95da199cf6ad32a51410dd", 31171),
+	DT_ENTRY1("ad4-backhome", "2.0", "5b086640b6099b686e8439d027449891", 36350),
 	DT_ENTRY1("ad4-unfortunately", "2.0", "8493ffd877273ef95c88c8f433126473", 55438),
 	DT_ENTRY0("bariscebik", "d63d310e2b2fe4ab7ea6bc74c136b8e0", 14634),
 	DT_ENTRY0("barneysproblem", "3fe45352a6c0d7bb0bdbf4f9c08afba7", 66055),
+	DT_ENTRY0("ad4-baroo", "d6919d2e21beafb46c5b4712703bea73", 46299),
 	DT_ENTRY1("ad4-beanstalk", "1.0", "fc9c17c355894948dc2e72c66e8d9963", 9837),
+	DT_ENTRY0("ad3-bedlam", "a86a6d6f3c54e787aafd9f9a8c9bef86", 21344),
+	DT_ENTRY0("ad4-beethro", "3d362adf355f2e0b0016703f9ca90eb0", 18602),
+	DT_ENTRY0("ad4-bigcitylaundry", "14bfd0a8a53e95d23f8a5dcb3a79ae90", 8088),
+	DT_ENTRY1("ad3-bigdayout", "1.3", "477e241b91f7154f4b82c4be54d5e364", 352208),
+	DT_ENTRY0("ad3-bigstuff", "b1774ed47e169020b33807deb0db46fd", 141374),
+	DT_ENTRY0("ad4-blacksheepsgold", "ac466de9e8f2e660bfe0c03b47f43d85", 29293),
+	DT_ENTRY0("ad4-blast", "ff101cb5b9a29701e1c9b0e8e42dfb85", 3447),
+	DT_ENTRY0("ad4-boiledeggs", "b4cb135ba16c5177c58c7a3f146437e8", 6423),
+	DT_ENTRY0("ad3-bombthreat", "150218c0377528a8353cb44a6806d5dd", 17955),
+	DT_ENTRY0("ad4-bountyhunter", "6c23ce1ba2fd6aa9abc958442d14579b", 4057),
+	DT_ENTRY0("ad4-braindeadweekend", "85540c66a7a48a518572fb34bef5c1f8", 9723),
+	DT_ENTRY0("ad4-breakout", "4d3df7d9ec87d33a6651d9d299ff9cd8", 24718),
+	DT_ENTRY0("ad4-bringingrain", "9f19f6c2637867be0bfce484b2daee8f", 10512),
+	DT_ENTRY0("ad4-britishfox", "6695dacace136957c07584c0384ffbab", 220489),
 	DT_ENTRY0("beerisntenough", "98248a8e65a36f6d0fb98111255a85dc", 14070),
+	DT_ENTRY0("ad4-bsg22", "6f52a023828e24449e6181c50a10a50c", 35681),
+	DT_ENTRY0("ad3-buffybeforedate", "0bd99db69a4e9654eb1bc02bd04679f1", 125581),
+	DT_ENTRY0("ad4-businessasusual", "d71d95db428047e0963042ad09181176", 7235),
 	DT_ENTRY0("caveofwonders", "f55f4e63886eb09e1f89bea547574919", 85471),
 	DT_ENTRY0("circusmenagerie", "3814400e3abb3e6340f055d5ec883c46", 117017),
 	DT_ENTRY0("cityInfear", "a6f625f184fa848ee6746e9aa6c94915", 248088),
@@ -478,6 +524,8 @@ const GlkDetectionEntry ADRIFT_GAMES[] = {
 	DT_ENTRY0("ad4-hellinahamper", "810247344fddc9a812bf6283b4826093", 80183),
 	DT_ENTRY0("toomuchexercise", "aebb58d94f632c4232bee72b9a1b5e25", 6248),
 	DT_ENTRY0("topaz", "0777a97e473b41ae04ab825556748e8d", 5980),
+	DT_ENTRY0("ad4-thebirthday", "14d55b781eb392bb0f120dee857f6486", 4150329),
+	DT_ENTRY0("ad3-fistandantalus", "a44aac0441648f68a85e1cbaef4c5e53", 12213),
 	DT_ENTRY0("twilight", "ab5ddd461c1fb2065d26fcfdf4baa5aa", 71377),
 	DT_ENTRY0("unauthorizedtermination", "a7bba6890fe2945bb192c67e395516ac", 107335),
 	DT_ENTRY0("unauthorizedtermination", "c28bf76f5c9873c0944db39b0c3faadd", 107316),
@@ -513,6 +561,8 @@ const GlkDetectionEntry ADRIFT_GAMES[] = {
 	// Unsupported English ADRIFT 4 games
 	DT_ENTRY0("sophia", "85e8f7306ca02dabe0a083828981c31a", 531015),
 	DT_ENTRY1("ad4-spaceboy", "2.5", "b9c350309385706eb7ae30e2e52e1096", 22605),
+	// Crashes: scummvm: engines/glk/adrift/scgamest.cpp:246: Glk::Adrift::sc_int Glk::Adrift::gs_object_openness(Glk::Adrift::sc_gameref_t, Glk::Adrift::sc_int): Assertion `gs_is_game_valid(gs) && gs_in_range(object, gs->object_count)' failed.
+	DT_ENTRY0("ad4-bloodrelatives", "d9384fe44f98113e5df8fdb4aba1d2a2", 81356),
 
 	// Unsupported English ADRIFT 5 games
 	DT_ENTRY0("1hgamonkeytoomany", "c9d719261d0f760f95685899aa80bbf5", 5016),
@@ -542,15 +592,19 @@ const GlkDetectionEntry ADRIFT_GAMES[] = {
 	DT_ENTRY0("tingalan", "08c9ecd86664b62335d3852a2bb3d201", 259969026),
 #endif
 
+	// French Games
+	DT_ENTRYL0("ad4-bellesmeres", Common::FR_FRA, "3d556ba5448b4bce8e7b0ee818bd1e79", 73972744),
+
 	// Italian Games
 	DT_ENTRYL0("ilgolem", Common::IT_ITA, "7ab97545be9c30457d0c9e748ab7885f", 6372213),
 
 	// Spanish Games
 	DT_ENTRYL1("ad4-elascensor", Common::ES_ESP, "1.0.2", "30494599eb5c012b677fec49fa0766a8", 3219428),
+	DT_ENTRYL0("ad4-bandera", Common::ES_ESP, "dd472902495610b4db02267d4fa2eff3", 8260541),
 
 	// Three Hour Games Competition: July 2004
 	DT_ENTRY0("3hgjailbreakbob", "c2e909cf2ddda863d2eb613c8273ee37", 31064),
-	DT_ENTRY0("3hgbriefcase", "f1c899773faf027d9cbb50078a6667c3", 10872),
+	DT_ENTRY0("ad4-3hgbriefcase", "f1c899773faf027d9cbb50078a6667c3", 10872),
 	DT_ENTRY0("ad3-3hgtheannihilationofthink", "22743eceafe94bf60ab5a3e43241883e", 6303),
 	DT_ENTRY0("3hgshadricktravels", "33036e2b4c11a36d28e6532051e9f05b", 7456),
 	DT_ENTRY0("3hglostsouls", "3083e21a3bd6766ea5fdf3166e8bd4d8", 16695),
@@ -561,7 +615,7 @@ const GlkDetectionEntry ADRIFT_GAMES[] = {
 	DT_ENTRY0("3hgsandl", "73a1e0b4451690e76d306136ec30754b", 27995),
 	DT_ENTRY0("3hgconfession", "718faa6f6e72fcd4b95ebcb1601be7bd", 203757),
 	DT_ENTRY0("3hgveteran", "65d5fc95b59f24e0e4997f62bf592ba3", 12043),
-	DT_ENTRY0("3hgburiedalive", "9e9a71babf3012461205dc7aa2cd2a3f", 11808),
+	DT_ENTRY0("ad4-3hgburiedalive", "9e9a71babf3012461205dc7aa2cd2a3f", 11808),
 	DT_ENTRY0("3hgzac", "85d95b8a6a962222d15724d42740f378", 13692),
 	DT_ENTRY0("3hgtogetyou", "388b5596945067ed3b92e6282e670825", 4496),
 
